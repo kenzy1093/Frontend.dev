@@ -1,0 +1,65 @@
+body{
+background-color: white;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+body,.content{
+    animation: daytoNight 10s infinite 1.5s; 
+}
+
+.sun{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: yellow;
+    border: 3px solid yellow;
+}
+
+.shadow{
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: white;
+    top: -5px;
+    left: 8px;
+    animation: moveshadow 10s  infinite 1.5s;
+}
+
+@keyframes moveshadow {
+    0%{
+        transform: translateX(150px);
+        background-color: white;
+    }
+
+    50%{
+        transform: translateX(-10px);
+        background-color: black;
+    }
+
+    100%{
+        transform: translateX(-170px);
+        background-color: white;
+    }
+}
+
+
+@keyframes daytoNight {
+    0%{
+        background-color: white;
+    }
+
+    50%{
+        background-color: black;
+    }
+
+    100%{
+        background-color: white;
+    }
+}

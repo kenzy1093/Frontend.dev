@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    width: 320px;
+    height: 630px;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.big-img{
+    width: 100%;
+    height: 400px;
+    background: url(samuel-regan-asante-wMkaMXTJjlQ-unsplash.jpg) center/cover;
+    
+}
+
+.content{
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 360px;
+    font-family: 'poppins', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 0px 13px;
+    background: linear-gradient(to top,#000 70%, transparent);
+}
+
+.box-one{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+i,.fa-solid ,.fa-star {
+    color: #ffe600;
+    margin: 0 1px;
+}
+
+
+.sub-text {
+    font-size: 13px;
+    text-align: justify;
+    color: #615b5b;
+    font-weight: bold;
+}
+
+.sub-text span{
+    color: white;
+}
+
+#txt {
+    text-align: right;
+}
+.box-two{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.box-two button{
+    height: 42px;
+    border: none;
+    outline: none;
+    font-weight: bolder;
+    font-size: 16px;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    
+}

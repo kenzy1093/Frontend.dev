@@ -1,0 +1,31 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader{
+    width: 32px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 2px solid #fff;
+    animation: fill 2s linear infinite alternate;
+    color: #20d0fc;
+    border-radius: 0 0 4px 4px;
+    transform: perspective(140px) rotate(0 deg);
+}
+
+@keyframes fill {
+    0% {
+        box-shadow: 0 0 inset;
+    }
+
+    100%{
+        box-shadow: 0 -70px inset;
+    }
+}

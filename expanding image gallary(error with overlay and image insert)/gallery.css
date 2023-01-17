@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images{
+    display: flex;
+}
+
+.images-item{
+    width: 150px;
+    height: 400px;
+    background-image: url(user-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.4s;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+h2{
+    opacity: 0;
+    color: white;
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    font-size: 1.1rem;
+    transition: all 0.4s;
+    font-family: sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.images-item:hover{
+    width: 300px;
+    height: 400px;
+}
+
+.images-item:hover h2{
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    opacity: 1;
+    z-index: 2;
+    transition: all 0.4s;
+    transform: translate(-50%, -50%);
+}
+
+
+/* failure with the orange overlay and insert of images */
+/*-------*/
+
+.images-item:hover::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    transition: all 0.4s;
+    background-image: linear-gradient(0deg, #e65b00, rgba(255, 255, 255, 0%);
+}
+
+.images-item:nth-child(2){
+    background-image: url(user-2.jpg);
+}
+
+.images-item:nth-child(3){
+    background-image: url(user-3.jpg);
+}
+
+.images-item:nth-child(4){
+    background-image: url(user-4.jpg);
+}
+
+.images-item:nth-child(5){
+    background-image: url(user-5.jpg);
+}
+
+

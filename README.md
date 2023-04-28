@@ -9,4 +9,5 @@ i learnt to use ctrl + k to create link to url in read.me file. here are some pr
 <br>
 [css art: bird](https://kenzy1093.github.io/Frontend.dev/css-art/bird/bird.html)
 <br>
-
+[css art: cartoon face](https://kenzy1093.github.io/Frontend.dev/css-art/cartoon%20face/face.html)
+<br>

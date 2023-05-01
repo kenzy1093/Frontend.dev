@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mcq quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8e4fa5c763.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="start-screen">
+        <button id="start-button">Start</button>
+    </div>
+    <div id="display-container">
+        <div class="header">
+            <div class="number-of-count">
+                <span class="number-of-question">1 of 3 questions</span>
+            </div>
+            <div class="timer-div">
+                <i class="fa-solid fa-stopwatch"></i>
+                <span class="time-left">10S</span>
+            </div>
+        </div>
+        <div id="container">
+            <!--questions and option will be here-->
+        </div>
+        <button id="next-button">Next</button>
+    </div>
+    <div class="score-container hide">
+        <div id="user-score">Demo score</div>
+        <button id="restart">Restart</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

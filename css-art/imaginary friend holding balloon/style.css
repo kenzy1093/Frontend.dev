@@ -211,5 +211,44 @@ html, body{
 }
 
 .hand2{
-    
+    border-radius: 0 100% 100% 100%;
+    box-shadow: inset 0 -0.5vmin var(--skindark);
+    top: 77%;
+    left: -16%;
+
+}
+
+.hair1{
+    top: 18%;
+    left: 60%;
+    width: 32%;
+    height: 9%;
+    box-shadow: 0.5vmin -0.75vmin 0 1.25vmin var(--skin), 0 -0.5vmin 0 1.5vmin var(--skindark);
+    clip-path: polygon(-50% -50%,50% -50%,50% 50%,-50% 50%);
+}
+
+.hair-tip1{
+    width: 2vmin;
+    height: 2vmin;
+    background: var(--skin);
+    top: calc(18% - 2vmin);
+    left: calc(76% - 1vmin);
+}
+
+.hair2{
+    width: 40%;
+    height: 15%;
+    box-shadow: 0.75vmin 0 var(--skindark), 0.25vmin -1vmin 0 1.5vmin var(--skin);
+    clip-path: polygon(50% -50%,150% -50%,150% 50%,50% 50%);
+    transform: rotate(-10deg);
+    top: 16%;
+    left: 2%;
+}
+
+.hair-tip2{
+    width: 2.5vmin;
+    height: 2.5vmin;
+    background: var(--skin);
+    top: 12.5%;
+    left: 10%;
 }

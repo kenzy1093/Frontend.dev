@@ -13,3 +13,4 @@ i learnt to use ctrl + k to create link to url in read.me file. here are some pr
 <br>
 [css art: imaginary friend holding balloon](https://kenzy1093.github.io/Frontend.dev/css-art/imaginary%20friend%20holding%20balloon/)
 <br>
+[css art: ace ventura](https://kenzy1093.github.io/Frontend.dev/css-art/ace%20ventura/)

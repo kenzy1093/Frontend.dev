@@ -1,0 +1,79 @@
+.cartoon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cartoon div{
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.b{
+    border: 1vmin solid black;
+}
+
+.r{
+    border-radius: 100%;
+}
+
+.hb::before,
+.ha::after{
+    content: "";
+    display: block;
+    position: absolute;
+}
+
+/****/
+
+.cartoon{
+    --skin: #fca;
+    --skin-dark: #fa8;
+    --hair: brown;
+    --line: rgba(0,0,0,0.75);
+    width: 80vmin;
+    height: 80vmin;
+    overflow: hidden;
+    border-radius: 0 0 30% 50%;
+    background-color: aquamarine;
+}
+
+.forehead{
+    width: 33%;
+    height: 40%;
+    background: var(--skin);
+    border-radius: 20% 50% 50% 100% / 70% 100% 100% 100%;
+    top: 22%;
+    left: 35%;
+}
+
+.neck{
+    width: 9%;
+    height: 30%;
+    background: var(--skin);
+    transform: rotate(8deg);
+    top: 48%;
+    left: 55%;
+    background: linear-gradient(45deg,transparent 50%, var(--skin) 0), linear-gradient(-65deg, var(--skin) 47%, var(--skin-dark) 0);
+}
+
+.chin{
+    width: 20%;
+    height: 10%;
+    background: var(--skin);
+    border-radius: 50% 100% / 100%;
+    transform: rotate(-39deg);
+    top: 58.5%;
+    left: 41.5%;
+}
+
+.cheek{
+    width: 11%;
+    height: 30%;
+    box-shadow: 7.5vmin -5vmin var(--skin);
+    top: 49%;
+    left: 31%;
+    transform: rotate(-15deg);
+}
+

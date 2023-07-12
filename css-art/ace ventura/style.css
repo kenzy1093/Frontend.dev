@@ -77,3 +77,32 @@
     transform: rotate(-15deg);
 }
 
+.hair{
+    width: 45%;
+    height: 16%;
+    background: var(--hair);
+    top: 10%;
+    left: 25%;
+    transform: rotate(2deg);
+}
+
+.hair::after{
+    width: 50%;
+    height: 150%;
+    background: var(--hair);
+    top: 0%;
+    border-radius: 50%;
+    transform: translate(0, -15%);
+    clip-path: polygon(100% 50%, 0% 50%, 0% 0%, 50% 0%, 30% 25%, 62% 0%, 50% 20%, 75% 5%, 40% 50%);
+}
+
+.hair::before{
+    height: 160%;
+    width: 30%;
+    background: var(--hair);
+    top: 67%;
+    right: -10%;
+    border-radius: 100% 70% 150% 100%;
+    transform: rotate(-4deg);
+}
+

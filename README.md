@@ -19,4 +19,5 @@ i learnt to use ctrl + k to create link to url in read.me file. here are some pr
 section for medical articles and drug lists
 
 [topic: asthma](https://kenzy1093.github.io/Frontend.dev/medical%20articles/asthma/asthma.html)
+[topic: drug list](https://kenzy1093.github.io/Frontend.dev/medical%20articles/druglist/druglist.html)
 

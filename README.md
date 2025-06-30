@@ -15,13 +15,15 @@ i learnt to use ctrl + k to create link to url in read.me file. here are some pr
 <br>
 [css art: ace ventura](https://kenzy1093.github.io/Frontend.dev/css-art/ace%20ventura/)
 
+[css art: tik tok button](https://kenzy1093.github.io/Frontend.dev/css-art/tik%20tok%20button/button.html)
 
 section for medical articles and drug lists
 
 [topic: asthma](https://kenzy1093.github.io/Frontend.dev/medical%20articles/asthma/asthma.html)
 <br>
 [topic: drug list](https://kenzy1093.github.io/Frontend.dev/medical%20articles/druglist/druglist.html)
-<br>
+
+
 project
-<br>
-[project: drug list](https://kenzy1093.github.io/Frontend.dev/quiz%20app/index.html)
+
+[project: quiz app](https://kenzy1093.github.io/Frontend.dev/quiz%20app/index.html)

@@ -1,0 +1,16 @@
+@property --i{
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+@keyframes spin{
+    0%{--i: 0deg;}
+    100%{--i: 360deg;}
+}
+
+img{
+    padding: 10px;
+    background: conic-gradient( from var(--i), red, blue,red);
+    animation: spin 3s infinite  linear ;
+}

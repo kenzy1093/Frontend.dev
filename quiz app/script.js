@@ -346,6 +346,666 @@ const quizarray = [
       "Circular"
     ],
     correct: "Inductive",
+  },
+   {
+    id: "30",
+    question: "What is the main purpose of an argument?",
+    options: [
+      "To describe events",
+      "To explain causes",
+      "To provide reasons for a conclusion",
+      "To ask questions"
+    ],
+    correct: "To provide reasons for a conclusion",
+  },
+  {
+    id: "31",
+    question: "What are the two main parts of an argument?",
+    options: [
+      "Facts and opinions",
+      "Premises and conclusion",
+      "Questions and answers",
+      "Examples and reports"
+    ],
+    correct: "Premises and conclusion",
+  },
+  {
+    id: "32",
+    question: "What must all premises be?",
+    options: [
+      "Commands",
+      "Questions",
+      "Statements",
+      "Opinions only"
+    ],
+    correct: "Statements",
+  },
+  {
+    id: "33",
+    question: "How many statements are required for an argument?",
+    options: [
+      "One",
+      "At least two",
+      "Three exactly",
+      "Unlimited"
+    ],
+    correct: "At least two",
+  },
+  {
+    id: "34",
+    question: "Which of the following is NOT an argument?",
+    options: [
+      "A report",
+      "A set of premises and conclusion",
+      "A persuasive claim",
+      "A logical reasoning"
+    ],
+    correct: "A report",
+  },
+  {
+    id: "35",
+    question: "What is a report in logic?",
+    options: [
+      "An opinion",
+      "An explanation",
+      "Information without argument",
+      "A conclusion"
+    ],
+    correct: "Information without argument",
+  },
+  {
+    id: "36",
+    question: "What is the purpose of an illustration?",
+    options: [
+      "To prove a claim",
+      "To clarify with examples",
+      "To argue strongly",
+      "To reject ideas"
+    ],
+    correct: "To clarify with examples",
+  },
+  {
+    id: "37",
+    question: "What is an explanation used for?",
+    options: [
+      "To persuade",
+      "To prove logically",
+      "To show why something happened",
+      "To reject arguments"
+    ],
+    correct: "To show why something happened",
+  },
+  {
+    id: "38",
+    question: "Why is a conditional statement not an argument?",
+    options: [
+      "It is too complex",
+      "It lacks a conclusion",
+      "It is only one statement",
+      "It is always false"
+    ],
+    correct: "It is only one statement",
+  },
+  {
+    id: "39",
+    question: "What does WCA stand for?",
+    options: [
+      "Well-Constructed Analysis",
+      "Well-Crafted Argument",
+      "Weak Causal Argument",
+      "Wide Concept Application"
+    ],
+    correct: "Well-Crafted Argument",
+  },
+  {
+    id: "40",
+    question: "What is the purpose of a well-crafted argument?",
+    options: [
+      "To confuse readers",
+      "To simplify and clarify structure",
+      "To add more words",
+      "To avoid conclusions"
+    ],
+    correct: "To simplify and clarify structure",
+  },
+  {
+    id: "41",
+    question: "Which word is a premise indicator?",
+    options: [
+      "Therefore",
+      "Thus",
+      "Because",
+      "Hence"
+    ],
+    correct: "Because",
+  },
+  {
+    id: "42",
+    question: "Which word is a conclusion indicator?",
+    options: [
+      "Since",
+      "Because",
+      "Therefore",
+      "Given that"
+    ],
+    correct: "Therefore",
+  },
+  {
+    id: "43",
+    question: "What are 'discounts' in arguments?",
+    options: [
+      "Main premises",
+      "Irrelevant objections",
+      "Supporting evidence",
+      "Conclusions"
+    ],
+    correct: "Irrelevant objections",
+  },
+  {
+    id: "44",
+    question: "What is repetition in an argument?",
+    options: [
+      "Adding new ideas",
+      "Restating the same idea",
+      "Giving examples",
+      "Providing evidence"
+    ],
+    correct: "Restating the same idea",
+  },
+  {
+    id: "45",
+    question: "What are assurances?",
+    options: [
+      "Logical proofs",
+      "Confidence words like 'clearly'",
+      "Examples",
+      "Premises"
+    ],
+    correct: "Confidence words like 'clearly'",
+  },
+  {
+    id: "46",
+    question: "What are hedges?",
+    options: [
+      "Strong claims",
+      "Words showing uncertainty",
+      "Logical conclusions",
+      "Evidence statements"
+    ],
+    correct: "Words showing uncertainty",
+  },
+  {
+    id: "47",
+    question: "Why should excess verbiage be removed?",
+    options: [
+      "To make arguments longer",
+      "To improve clarity",
+      "To confuse readers",
+      "To add emotion"
+    ],
+    correct: "To improve clarity",
+  },
+  {
+    id: "48",
+    question: "What is uniform language?",
+    options: [
+      "Using different terms",
+      "Using consistent terms",
+      "Using complex words",
+      "Using emotional words"
+    ],
+    correct: "Using consistent terms",
+  },
+  {
+    id: "49",
+    question: "What does being charitable in analysis mean?",
+    options: [
+      "Criticizing harshly",
+      "Ignoring arguments",
+      "Interpreting fairly",
+      "Rejecting ideas"
+    ],
+    correct: "Interpreting fairly",
+  },
+  {
+    id: "50",
+    question: "What is a sub-conclusion?",
+    options: [
+      "Final conclusion",
+      "A supporting example",
+      "An intermediate conclusion",
+      "A premise"
+    ],
+    correct: "An intermediate conclusion",
+  },
+  {
+    id: "51",
+    question: "What is an implicit premise?",
+    options: [
+      "A false statement",
+      "A hidden assumption",
+      "A repeated idea",
+      "A conclusion"
+    ],
+    correct: "A hidden assumption",
+  },
+  {
+    id: "52",
+    question: "What is another name for an argument with missing premises?",
+    options: [
+      "Syllogism",
+      "Enthymeme",
+      "Paradox",
+      "Fallacy"
+    ],
+    correct: "Enthymeme",
+  },
+  {
+    id: "53",
+    question: "What is the purpose of argument diagrams?",
+    options: [
+      "To decorate arguments",
+      "To show logical structure",
+      "To add examples",
+      "To remove conclusions"
+    ],
+    correct: "To show logical structure",
+  },
+  {
+    id: "54",
+    question: "What do arrows represent in argument diagrams?",
+    options: [
+      "Examples",
+      "Questions",
+      "Support relationship",
+      "Opinions"
+    ],
+    correct: "Support relationship",
+  },
+  {
+    id: "55",
+    question: "What are independent premises?",
+    options: [
+      "Premises that depend on each other",
+      "Premises that support separately",
+      "False premises",
+      "Hidden premises"
+    ],
+    correct: "Premises that support separately",
+  },
+  {
+    id: "56",
+    question: "What are interdependent premises?",
+    options: [
+      "Premises that work together",
+      "Separate premises",
+      "False premises",
+      "Extra statements"
+    ],
+    correct: "Premises that work together",
+  },
+  {
+    id: "57",
+    question: "What is the first step in analyzing an argument?",
+    options: [
+      "Draw diagram",
+      "Identify premises and conclusion",
+      "Remove words",
+      "Add examples"
+    ],
+    correct: "Identify premises and conclusion",
+  },
+  {
+    id: "58",
+    question: "Why are some real arguments difficult to analyze?",
+    options: [
+      "They are too short",
+      "They are perfectly clear",
+      "They contain extra or unclear information",
+      "They lack conclusions"
+    ],
+    correct: "They contain extra or unclear information",
+  },
+  {
+    id: "59",
+    question: "What is the main goal of argument analysis?",
+    options: [
+      "To memorize facts",
+      "To identify logical structure",
+      "To create confusion",
+      "To avoid reasoning"
+    ],
+    correct: "To identify logical structure",
+  },
+   {
+    id: "60",
+    question: "What indicates that a passage is an argument?",
+    options: [
+      "It gives information",
+      "It contains examples",
+      "It provides reasons for a conclusion",
+      "It asks a question"
+    ],
+    correct: "It provides reasons for a conclusion",
+  },
+  {
+    id: "61",
+    question: "Why must arguments contain only statements?",
+    options: [
+      "Statements are longer",
+      "Statements have truth value",
+      "Statements are opinions",
+      "Statements are emotional"
+    ],
+    correct: "Statements have truth value",
+  },
+  {
+    id: "62",
+    question: "What makes a passage a non-argument?",
+    options: [
+      "It has a conclusion",
+      "It has premises",
+      "It lacks support for a claim",
+      "It uses logic"
+    ],
+    correct: "It lacks support for a claim",
+  },
+  {
+    id: "63",
+    question: "Which is an example of an unsupported assertion?",
+    options: [
+      "An argument",
+      "A report",
+      "A conclusion with reasons",
+      "A diagram"
+    ],
+    correct: "A report",
+  },
+  {
+    id: "64",
+    question: "What distinguishes an illustration from an argument?",
+    options: [
+      "It proves a claim",
+      "It uses logic",
+      "It gives examples only",
+      "It has premises"
+    ],
+    correct: "It gives examples only",
+  },
+  {
+    id: "65",
+    question: "What is the main role of explanatory statements?",
+    options: [
+      "To prove truth",
+      "To persuade",
+      "To explain why something happens",
+      "To reject claims"
+    ],
+    correct: "To explain why something happens",
+  },
+  {
+    id: "66",
+    question: "Why are conditional statements considered non-arguments?",
+    options: [
+      "They are false",
+      "They contain only one statement",
+      "They are too complex",
+      "They lack meaning"
+    ],
+    correct: "They contain only one statement",
+  },
+  {
+    id: "67",
+    question: "What is the first step in forming a well-crafted argument?",
+    options: [
+      "Draw diagram",
+      "Identify premises and conclusion",
+      "Add examples",
+      "Remove indicators"
+    ],
+    correct: "Identify premises and conclusion",
+  },
+  {
+    id: "68",
+    question: "What is excess verbiage?",
+    options: [
+      "Key premises",
+      "Logical conclusions",
+      "Unnecessary words or statements",
+      "Strong evidence"
+    ],
+    correct: "Unnecessary words or statements",
+  },
+  {
+    id: "69",
+    question: "What is the purpose of removing excess verbiage?",
+    options: [
+      "To weaken arguments",
+      "To simplify and clarify reasoning",
+      "To lengthen text",
+      "To confuse readers"
+    ],
+    correct: "To simplify and clarify reasoning",
+  },
+  {
+    id: "70",
+    question: "Which of the following is a discount indicator?",
+    options: [
+      "Because",
+      "Therefore",
+      "Although",
+      "Hence"
+    ],
+    correct: "Although",
+  },
+  {
+    id: "71",
+    question: "What should be done with discounts in arguments?",
+    options: [
+      "Treat as conclusions",
+      "Treat as premises",
+      "Ignore them",
+      "Expand them"
+    ],
+    correct: "Ignore them",
+  },
+  {
+    id: "72",
+    question: "What is the main issue with repetition?",
+    options: [
+      "Adds new ideas",
+      "Confuses structure",
+      "Repeats same idea unnecessarily",
+      "Strengthens logic"
+    ],
+    correct: "Repeats same idea unnecessarily",
+  },
+  {
+    id: "73",
+    question: "Why are assurances often removed?",
+    options: [
+      "They weaken arguments",
+      "They add no logical value",
+      "They are false",
+      "They are unclear"
+    ],
+    correct: "They add no logical value",
+  },
+  {
+    id: "74",
+    question: "What do hedges indicate?",
+    options: [
+      "Certainty",
+      "Confidence",
+      "Uncertainty",
+      "Proof"
+    ],
+    correct: "Uncertainty",
+  },
+  {
+    id: "75",
+    question: "When should hedges NOT be removed?",
+    options: [
+      "When they confuse meaning",
+      "When they affect argument strength",
+      "When they repeat ideas",
+      "When they are long"
+    ],
+    correct: "When they affect argument strength",
+  },
+  {
+    id: "76",
+    question: "Why is uniform language important?",
+    options: [
+      "It adds complexity",
+      "It ensures logical clarity",
+      "It adds examples",
+      "It removes conclusions"
+    ],
+    correct: "It ensures logical clarity",
+  },
+  {
+    id: "77",
+    question: "What problem occurs without uniform language?",
+    options: [
+      "Too many premises",
+      "Weak evidence",
+      "Obscured logical connection",
+      "Missing conclusion"
+    ],
+    correct: "Obscured logical connection",
+  },
+  {
+    id: "78",
+    question: "What does being charitable in interpretation involve?",
+    options: [
+      "Ignoring arguments",
+      "Changing meaning",
+      "Preserving the author's intent",
+      "Rejecting weak ideas"
+    ],
+    correct: "Preserving the author's intent",
+  },
+  {
+    id: "79",
+    question: "What should be avoided when interpreting arguments?",
+    options: [
+      "Clarity",
+      "Fairness",
+      "Distorting the author's meaning",
+      "Logical structure"
+    ],
+    correct: "Distorting the author's meaning",
+  },
+  {
+    id: "80",
+    question: "What is a final conclusion?",
+    options: [
+      "A premise",
+      "An intermediate step",
+      "The main claim being supported",
+      "An example"
+    ],
+    correct: "The main claim being supported",
+  },
+  {
+    id: "81",
+    question: "What role does a sub-conclusion play?",
+    options: [
+      "Ends argument",
+      "Supports premises",
+      "Supports final conclusion",
+      "Adds examples"
+    ],
+    correct: "Supports final conclusion",
+  },
+  {
+    id: "82",
+    question: "What is an enthymeme?",
+    options: [
+      "A false argument",
+      "An argument with hidden premise",
+      "A diagram",
+      "A conclusion only"
+    ],
+    correct: "An argument with hidden premise",
+  },
+  {
+    id: "83",
+    question: "Why are implicit premises added?",
+    options: [
+      "To confuse argument",
+      "To clarify reasoning",
+      "To remove logic",
+      "To shorten text"
+    ],
+    correct: "To clarify reasoning",
+  },
+  {
+    id: "84",
+    question: "What is the first step in diagramming an argument?",
+    options: [
+      "Draw arrows",
+      "Remove words",
+      "Number statements",
+      "Add examples"
+    ],
+    correct: "Number statements",
+  },
+  {
+    id: "85",
+    question: "What do arrows in diagrams indicate?",
+    options: [
+      "Examples",
+      "Questions",
+      "Support relationship",
+      "Opinions"
+    ],
+    correct: "Support relationship",
+  },
+  {
+    id: "86",
+    question: "What is independent support?",
+    options: [
+      "Premises depend on each other",
+      "Each premise supports conclusion separately",
+      "Premises are false",
+      "Premises are hidden"
+    ],
+    correct: "Each premise supports conclusion separately",
+  },
+  {
+    id: "87",
+    question: "What is interdependent support?",
+    options: [
+      "Premises work alone",
+      "Premises must work together",
+      "Premises are irrelevant",
+      "Premises are repeated"
+    ],
+    correct: "Premises must work together",
+  },
+  {
+    id: "88",
+    question: "Why may statements joined by 'and' be separated?",
+    options: [
+      "To reduce meaning",
+      "To show logical structure",
+      "To remove premises",
+      "To simplify grammar"
+    ],
+    correct: "To show logical structure",
+  },
+  {
+    id: "89",
+    question: "What is the main benefit of argument diagrams?",
+    options: [
+      "They decorate text",
+      "They simplify grammar",
+      "They reveal logical connections",
+      "They remove conclusions"
+    ],
+    correct: "They reveal logical connections",
   }
 
 ];

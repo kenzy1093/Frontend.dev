@@ -1006,7 +1006,668 @@ const quizarray = [
       "They remove conclusions"
     ],
     correct: "They reveal logical connections",
+  },
+  {
+    id: "90",
+    question: "What is cognitive meaning?",
+    options: [
+      "Emotional expression",
+      "Information conveyed",
+      "Personal opinion",
+      "Figurative language"
+    ],
+    correct: "Information conveyed",
+  },
+  {
+    id: "91",
+    question: "What does emotive meaning do?",
+    options: [
+      "Provide data",
+      "Express or evoke emotions",
+      "Define terms",
+      "List examples"
+    ],
+    correct: "Express or evoke emotions",
+  },
+  {
+    id: "92",
+    question: "Which type of language is used in logic?",
+    options: [
+      "Emotive",
+      "Cognitive",
+      "Figurative",
+      "Persuasive"
+    ],
+    correct: "Cognitive",
+  },
+  {
+    id: "93",
+    question: "What is ambiguity?",
+    options: [
+      "Unclear boundaries",
+      "Multiple meanings",
+      "Emotional language",
+      "Strong reasoning"
+    ],
+    correct: "Multiple meanings",
+  },
+  {
+    id: "94",
+    question: "What is vagueness?",
+    options: [
+      "Many meanings",
+      "Unclear boundaries",
+      "Logical error",
+      "Strong definition"
+    ],
+    correct: "Unclear boundaries",
+  },
+  {
+    id: "95",
+    question: "Which is an example of ambiguity?",
+    options: [
+      "Fresh",
+      "Bank",
+      "Good",
+      "Tall"
+    ],
+    correct: "Bank",
+  },
+  {
+    id: "96",
+    question: "What is an extensional definition?",
+    options: [
+      "Defines by properties",
+      "Defines by listing members",
+      "Defines emotionally",
+      "Defines vaguely"
+    ],
+    correct: "Defines by listing members",
+  },
+  {
+    id: "97",
+    question: "What is an intensional definition?",
+    options: [
+      "Lists examples",
+      "Uses properties or attributes",
+      "Uses emotion",
+      "Uses diagrams"
+    ],
+    correct: "Uses properties or attributes",
+  },
+  {
+    id: "98",
+    question: "Which type of definition is found in dictionaries?",
+    options: [
+      "Stipulative",
+      "Lexical",
+      "Précising",
+      "Theoretical"
+    ],
+    correct: "Lexical",
+  },
+  {
+    id: "99",
+    question: "What is a stipulative definition?",
+    options: [
+      "Dictionary meaning",
+      "Assigned meaning",
+      "Scientific explanation",
+      "Emotional term"
+    ],
+    correct: "Assigned meaning",
+  },
+  {
+    id: "100",
+    question: "Which definition reduces vagueness?",
+    options: [
+      "Lexical",
+      "Précising",
+      "Stipulative",
+      "Ostensive"
+    ],
+    correct: "Précising",
+  },
+  {
+    id: "101",
+    question: "What is a theoretical definition?",
+    options: [
+      "Lists examples",
+      "Explains true nature",
+      "Defines emotionally",
+      "Defines vaguely"
+    ],
+    correct: "Explains true nature",
+  },
+  {
+    id: "102",
+    question: "What does genus mean?",
+    options: [
+      "Specific feature",
+      "Broad category",
+      "Conclusion",
+      "Example"
+    ],
+    correct: "Broad category",
+  },
+  {
+    id: "103",
+    question: "What is difference in definition?",
+    options: [
+      "Broad class",
+      "Distinguishing feature",
+      "Example",
+      "Emotion"
+    ],
+    correct: "Distinguishing feature",
+  },
+  {
+    id: "104",
+    question: "What is a circular definition?",
+    options: [
+      "Too wide",
+      "Uses same term",
+      "Too narrow",
+      "Too emotional"
+    ],
+    correct: "Uses same term",
+  },
+  {
+    id: "105",
+    question: "What is a definition that is too wide?",
+    options: [
+      "Excludes cases",
+      "Includes unrelated cases",
+      "Uses emotion",
+      "Repeats idea"
+    ],
+    correct: "Includes unrelated cases",
+  },
+  {
+    id: "106",
+    question: "What is a definition that is too narrow?",
+    options: [
+      "Includes too much",
+      "Excludes valid cases",
+      "Uses emotion",
+      "Repeats terms"
+    ],
+    correct: "Excludes valid cases",
+  },
+  {
+    id: "107",
+    question: "What is equivocation?",
+    options: [
+      "Using same meaning",
+      "Using different meanings of a word",
+      "Using emotion",
+      "Using examples"
+    ],
+    correct: "Using different meanings of a word",
+  },
+  {
+    id: "108",
+    question: "What causes a merely verbal dispute?",
+    options: [
+      "Different facts",
+      "Different meanings of words",
+      "Strong logic",
+      "Clear reasoning"
+    ],
+    correct: "Different meanings of words",
+  },
+  {
+    id: "109",
+    question: "What is a persuasive definition?",
+    options: [
+      "Neutral definition",
+      "Biased definition",
+      "Scientific definition",
+      "Exact definition"
+    ],
+    correct: "Biased definition",
+  },
+  {
+    id: "110",
+    question: "Which language type expresses emotion?",
+    options: [
+      "Cognitive",
+      "Neutral",
+      "Emotive",
+      "Logical"
+    ],
+    correct: "Emotive",
+  },
+  {
+    id: "111",
+    question: "Which helps remove ambiguity?",
+    options: [
+      "Emotion",
+      "Definitions",
+      "Examples",
+      "Opinions"
+    ],
+    correct: "Definitions",
+  },
+  {
+    id: "112",
+    question: "What is ostensive definition?",
+    options: [
+      "Listing items",
+      "Pointing to examples",
+      "Giving properties",
+      "Using logic"
+    ],
+    correct: "Pointing to examples",
+  },
+  {
+    id: "113",
+    question: "What is enumerative definition?",
+    options: [
+      "Pointing",
+      "Listing individuals",
+      "Listing properties",
+      "Explaining theory"
+    ],
+    correct: "Listing individuals",
+  },
+  {
+    id: "114",
+    question: "What is subclass definition?",
+    options: [
+      "Listing groups",
+      "Listing individuals",
+      "Using emotions",
+      "Using diagrams"
+    ],
+    correct: "Listing groups",
+  },
+  {
+    id: "115",
+    question: "Why are definitions important?",
+    options: [
+      "To confuse",
+      "To clarify meaning",
+      "To persuade",
+      "To shorten arguments"
+    ],
+    correct: "To clarify meaning",
+  },
+  {
+    id: "116",
+    question: "Which is NOT a good definition?",
+    options: [
+      "Clear",
+      "Precise",
+      "Circular",
+      "Informative"
+    ],
+    correct: "Circular",
+  },
+  {
+    id: "117",
+    question: "What is figurative definition?",
+    options: [
+      "Literal",
+      "Emotional or poetic",
+      "Logical",
+      "Exact"
+    ],
+    correct: "Emotional or poetic",
+  },
+  {
+    id: "118",
+    question: "What problem arises from poor language use?",
+    options: [
+      "Better logic",
+      "Logical errors",
+      "Clear thinking",
+      "Strong arguments"
+    ],
+    correct: "Logical errors",
+  },
+  {
+    id: "119",
+    question: "What is the main link between language and logic?",
+    options: [
+      "Emotion only",
+      "Language affects reasoning",
+      "Logic ignores language",
+      "Language is irrelevant"
+    ],
+    correct: "Language affects reasoning",
+  },
+  {
+    id: "120",
+    question: "What is a fallacy?",
+    options: [
+      "A valid argument",
+      "An error in reasoning",
+      "A strong conclusion",
+      "A true premise"
+    ],
+    correct: "An error in reasoning",
+  },
+  {
+    id: "121",
+    question: "What distinguishes informal fallacies?",
+    options: [
+      "Structure errors",
+      "Content and meaning errors",
+      "Mathematical errors",
+      "Diagram errors"
+    ],
+    correct: "Content and meaning errors",
+  },
+  {
+    id: "122",
+    question: "What is a formal fallacy?",
+    options: [
+      "Language error",
+      "Invalid logical form",
+      "Emotional reasoning",
+      "Weak conclusion"
+    ],
+    correct: "Invalid logical form",
+  },
+  {
+    id: "123",
+    question: "What is ad hominem?",
+    options: [
+      "Attacking the argument",
+      "Attacking the person",
+      "Using logic",
+      "Providing evidence"
+    ],
+    correct: "Attacking the person",
+  },
+  {
+    id: "124",
+    question: "What is appeal to force?",
+    options: [
+      "Using logic",
+      "Using threat to persuade",
+      "Using emotion",
+      "Using data"
+    ],
+    correct: "Using threat to persuade",
+  },
+  {
+    id: "125",
+    question: "What is straw man fallacy?",
+    options: [
+      "Strong argument",
+      "Misrepresenting opponent’s argument",
+      "Using evidence",
+      "Valid reasoning"
+    ],
+    correct: "Misrepresenting opponent’s argument",
+  },
+  {
+    id: "126",
+    question: "What is appeal to people?",
+    options: [
+      "Using data",
+      "Appealing to popularity",
+      "Using logic",
+      "Using diagrams"
+    ],
+    correct: "Appealing to popularity",
+  },
+  {
+    id: "127",
+    question: "What is appeal to pity?",
+    options: [
+      "Using evidence",
+      "Using sympathy",
+      "Using logic",
+      "Using facts"
+    ],
+    correct: "Using sympathy",
+  },
+  {
+    id: "128",
+    question: "What is appeal to ignorance?",
+    options: [
+      "Using knowledge",
+      "Assuming lack of proof is proof",
+      "Using logic",
+      "Using emotion"
+    ],
+    correct: "Assuming lack of proof is proof",
+  },
+  {
+    id: "129",
+    question: "What is red herring fallacy?",
+    options: [
+      "Changing subject",
+      "Using examples",
+      "Giving evidence",
+      "Using logic"
+    ],
+    correct: "Changing subject",
+  },
+  {
+    id: "130",
+    question: "What is equivocation?",
+    options: [
+      "Same meaning",
+      "Different meanings of same word",
+      "Clear reasoning",
+      "Strong argument"
+    ],
+    correct: "Different meanings of same word",
+  },
+  {
+    id: "131",
+    question: "What is amphiboly?",
+    options: [
+      "Clear grammar",
+      "Ambiguous sentence structure",
+      "Logical proof",
+      "Emotional appeal"
+    ],
+    correct: "Ambiguous sentence structure",
+  },
+  {
+    id: "132",
+    question: "What is composition fallacy?",
+    options: [
+      "Whole to parts",
+      "Parts to whole",
+      "Emotion to logic",
+      "Data to theory"
+    ],
+    correct: "Parts to whole",
+  },
+  {
+    id: "133",
+    question: "What is division fallacy?",
+    options: [
+      "Parts to whole",
+      "Whole to parts",
+      "Emotion to logic",
+      "Data to theory"
+    ],
+    correct: "Whole to parts",
+  },
+  {
+    id: "134",
+    question: "What is begging the question?",
+    options: [
+      "Asking questions",
+      "Circular reasoning",
+      "Using evidence",
+      "Using data"
+    ],
+    correct: "Circular reasoning",
+  },
+  {
+    id: "135",
+    question: "What is false dilemma?",
+    options: [
+      "Many options",
+      "Limited unjustified choices",
+      "Clear reasoning",
+      "Strong logic"
+    ],
+    correct: "Limited unjustified choices",
+  },
+  {
+    id: "136",
+    question: "What is unreliable authority fallacy?",
+    options: [
+      "Using experts",
+      "Using weak authority",
+      "Using logic",
+      "Using data"
+    ],
+    correct: "Using weak authority",
+  },
+  {
+    id: "137",
+    question: "What is false cause fallacy?",
+    options: [
+      "Correct cause",
+      "Wrong cause assumption",
+      "Using logic",
+      "Using evidence"
+    ],
+    correct: "Wrong cause assumption",
+  },
+  {
+    id: "138",
+    question: "What is complex question fallacy?",
+    options: [
+      "Simple question",
+      "Loaded question",
+      "Clear question",
+      "Logical question"
+    ],
+    correct: "Loaded question",
+  },
+  {
+    id: "139",
+    question: "Which fallacy uses threats?",
+    options: [
+      "Ad hominem",
+      "Ad baculum",
+      "Ad populum",
+      "Red herring"
+    ],
+    correct: "Ad baculum",
+  },
+  {
+    id: "140",
+    question: "Which fallacy appeals to popularity?",
+    options: [
+      "Ad hominem",
+      "Ad populum",
+      "Ad baculum",
+      "Equivocation"
+    ],
+    correct: "Ad populum",
+  },
+  {
+    id: "141",
+    question: "Which fallacy appeals to sympathy?",
+    options: [
+      "Ad misericordiam",
+      "Ad populum",
+      "Ad baculum",
+      "Equivocation"
+    ],
+    correct: "Ad misericordiam",
+  },
+  {
+    id: "142",
+    question: "Which fallacy shifts meaning of words?",
+    options: [
+      "Equivocation",
+      "Division",
+      "Composition",
+      "Red herring"
+    ],
+    correct: "Equivocation",
+  },
+  {
+    id: "143",
+    question: "Which fallacy misleads using grammar?",
+    options: [
+      "Equivocation",
+      "Amphiboly",
+      "Division",
+      "False cause"
+    ],
+    correct: "Amphiboly",
+  },
+  {
+    id: "144",
+    question: "Which fallacy assumes conclusion in premise?",
+    options: [
+      "False dilemma",
+      "Begging the question",
+      "Ad hominem",
+      "Red herring"
+    ],
+    correct: "Begging the question",
+  },
+  {
+    id: "145",
+    question: "Which fallacy limits choices unfairly?",
+    options: [
+      "False dilemma",
+      "Equivocation",
+      "Ad hominem",
+      "Division"
+    ],
+    correct: "False dilemma",
+  },
+  {
+    id: "146",
+    question: "Which fallacy distracts from argument?",
+    options: [
+      "Red herring",
+      "Equivocation",
+      "Composition",
+      "Division"
+    ],
+    correct: "Red herring",
+  },
+  {
+    id: "147",
+    question: "Which fallacy wrongly generalizes cause?",
+    options: [
+      "False cause",
+      "Ad hominem",
+      "Amphiboly",
+      "Division"
+    ],
+    correct: "False cause",
+  },
+  {
+    id: "148",
+    question: "Which fallacy uses weak authority?",
+    options: [
+      "Ad populum",
+      "Ad verecundiam",
+      "Ad baculum",
+      "Red herring"
+    ],
+    correct: "Ad verecundiam",
+  },
+  {
+    id: "149",
+    question: "What is the main issue in unwarranted assumptions?",
+    options: [
+      "Too much data",
+      "Lack of support",
+      "Too many examples",
+      "Too much logic"
+    ],
+    correct: "Lack of support",
   }
+
 
 ];
 

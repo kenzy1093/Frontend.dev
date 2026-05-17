@@ -1,0 +1,75 @@
+:root {
+    --bg-color: #f8fafc;
+    --sidebar-bg: #ffffff;
+    --text-primary: #1e293b;
+    --primary-color: #2563eb;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --border-color: #e2e8f0;
+    --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+    --bg-color: #0f172a;
+    --sidebar-bg: #1e293b;
+    --text-primary: #f1f5f9;
+    --card-bg: #1e293b;
+    --border-color: #334155;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+body { background-color: var(--bg-color); color: var(--text-primary); overflow: hidden; }
+
+.app-container { display: flex; height: 100vh; }
+
+/* Sidebar */
+.sidebar { width: 260px; background: var(--sidebar-bg); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; padding: 20px; transition: transform 0.3s; z-index: 1001; }
+@media (max-width: 992px) {
+    .sidebar { position: fixed; transform: translateX(-100%); height: 100%; }
+    .sidebar.open { transform: translateX(0); }
+}
+
+.logo { font-size: 1.5rem; font-weight: 800; color: var(--primary-color); margin-bottom: 2rem; }
+.nav-btn { width: 100%; padding: 12px; margin-bottom: 5px; border: none; background: none; text-align: left; cursor: pointer; color: var(--text-primary); border-radius: 8px; }
+.nav-btn.active { background: var(--primary-color); color: white; }
+
+/* Main */
+.main-content { flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+header { padding: 1rem 2rem; background: var(--sidebar-bg); border-bottom: 1px solid var(--border-color); display: flex; align-items: center; justify-content: space-between; }
+
+.search-bar { flex: 0.6; position: relative; }
+.search-bar input { width: 100%; padding: 10px 40px; border-radius: 10px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); }
+.search-bar i { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); color: #94a3b8; }
+
+.views { padding: 2rem; max-width: 1100px; margin: 0 auto; width: 100%; }
+.view { display: none; }
+.view.active { display: block; }
+
+/* Components */
+.card-form { background: var(--card-bg); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 1rem; }
+@media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+.form-group { display: flex; flex-direction: column; gap: 5px; }
+input, select, textarea { padding: 10px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-color); color: var(--text-primary); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.stat-card { background: var(--card-bg); padding: 1.5rem; border-radius: 12px; border: 1px solid var(--border-color); text-align: center; }
+.chart-container { background: var(--card-bg); padding: 1rem; border-radius: 12px; border: 1px solid var(--border-color); height: 350px; }
+
+/* Buttons */
+.btn-primary { background: #2563eb; color: white; padding: 12px; border-radius: 8px; border: none; cursor: pointer; width: 100%; font-weight: bold; }
+.btn-success { background: #10b981; color: white; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; }
+.btn-danger { background: #ef4444; color: white; padding: 12px; border-radius: 8px; border: none; cursor: pointer; font-weight: bold; }
+.btn-outline { border: 1px solid var(--border-color); padding: 5px 12px; border-radius: 6px; background: none; color: var(--text-primary); cursor: pointer; }
+
+.edit-btn { color: #2563eb; cursor: pointer; margin-right: 10px; background:none; border:none; }
+.delete-btn { color: #ef4444; cursor: pointer; background:none; border:none; }
+
+.table-container { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border-color); overflow-x: auto; margin-top: 1rem; }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid var(--border-color); }
+
+.action-buttons-row { display: flex; gap: 10px; margin-top: 20px; }
+.action-buttons-row button { flex: 1; }
+.hidden { display: none !important; }

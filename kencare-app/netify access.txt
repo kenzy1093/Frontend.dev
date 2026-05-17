@@ -1,0 +1,7 @@
+https://adorable-truffle-0ccc19.netlify.app
+
+Your project will be live for 1 hour.
+
+The password for accessing the project is: My-Drop-Site
+
+To keep your Netlify projects online, create a free account.

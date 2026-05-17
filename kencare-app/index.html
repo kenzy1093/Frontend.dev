@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KenCare Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar" id="sidebar">
+            <div class="logo"><i class="fa-solid fa-notes-medical"></i> KenCare</div>
+            <nav id="main-nav">
+                <button class="nav-btn active" data-target="dashboard-view"><i class="fa-solid fa-chart-pie"></i> Dashboard</button>
+                <button class="nav-btn" data-target="add-patient-view"><i class="fa-solid fa-user-plus"></i> New Visit</button>
+                <button class="nav-btn" data-target="history-view"><i class="fa-solid fa-clock-rotate-left"></i> History</button>
+                <button class="nav-btn" data-target="financial-view"><i class="fa-solid fa-file-invoice-dollar"></i> Finance</button>
+                <button class="nav-btn" data-target="reports-view"><i class="fa-solid fa-file-invoice"></i> Reports</button>
+            </nav>
+            <div class="bottom-actions">
+                <button id="theme-toggle"><i class="fa-solid fa-moon"></i> Theme</button>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header>
+                <button id="mobile-menu-btn"><i class="fa-solid fa-bars"></i></button>
+                <div class="search-bar">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="global-search" placeholder="Quick search patient name...">
+                </div>
+                <div class="user-profile">Admin</div>
+            </header>
+
+            <div class="views">
+                <section id="dashboard-view" class="view active">
+                    <h2 id="dash-month-title">Clinic Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card"><h3>Total Records</h3><p id="stat-total">0</p></div>
+                        <div class="stat-card"><h3>Today</h3><p id="stat-today">0</p></div>
+                    </div>
+                    <div class="chart-container">
+                        <canvas id="visitsChart"></canvas>
+                    </div>
+                </section>
+
+                <section id="add-patient-view" class="view">
+                    <h2>New Patient Entry</h2>
+                    <form id="patient-form" class="card-form">
+                        <div class="form-row">
+                            <div class="form-group"><label>Visit Date</label><input type="date" id="p-visit-date" required></div>
+                            <div class="form-group"><label>Date of Birth</label><input type="date" id="p-dob"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>First Name</label><input type="text" id="p-firstname" required></div>
+                            <div class="form-group"><label>Last Name</label><input type="text" id="p-lastname" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Type of Visit</label>
+                            <select id="p-visit-type" required>
+                                <option value="Adult Visit">Adult Visit</option>
+                                <option value="Senior Visit">Senior Visit</option>
+                                <option value="Child Visit">Child Visit</option>
+                                <option value="Basic School Medical">Basic School Medical</option>
+                                <option value="Primary School Medical">Primary School Medical</option>
+                                <option value="High School Medical">High School Medical</option>
+                                <option value="Work Medical">Work Medical</option>
+                                <option value="Result">Result Only</option>
+                                <option value="Insurance Only">Insurance Only</option>
+                                <option value="No Charge">No Charge</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Symptoms</label><textarea id="p-symptoms" rows="2" required></textarea></div>
+                        <div class="form-group"><label>Diagnosis</label><textarea id="p-diagnosis" rows="2"></textarea></div>
+                        <div class="form-group"><label>Procedure</label><input type="text" id="p-procedure"></div>
+                        <div class="form-group"><label>Procedure Cost ($)</label><input type="number" id="p-proc-cost" value="0"></div>
+                        <div class="form-group"><label>Prescription</label><textarea id="p-prescription" rows="2"></textarea></div>
+                        <button type="submit" class="btn-primary">Save Visit</button>
+                    </form>
+                </section>
+
+                <section id="edit-patient-view" class="view">
+                    <h2>Edit Record</h2>
+                    <form id="edit-form" class="card-form">
+                        <input type="hidden" id="edit-id">
+                        <div class="form-row">
+                            <div class="form-group"><label>Visit Date</label><input type="date" id="edit-visit-date" required></div>
+                            <div class="form-group"><label>Date of Birth</label><input type="date" id="edit-dob"></div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group"><label>First Name</label><input type="text" id="edit-firstname" required></div>
+                            <div class="form-group"><label>Last Name</label><input type="text" id="edit-lastname" required></div>
+                        </div>
+                        <div class="form-group">
+                            <label>Type of Visit</label>
+                            <select id="edit-visit-type">
+                                <option value="Adult Visit">Adult Visit</option>
+                                <option value="Senior Visit">Senior Visit</option>
+                                <option value="Child Visit">Child Visit</option>
+                                <option value="Basic School Medical">Basic School Medical</option>
+                                <option value="Primary School Medical">Primary School Medical</option>
+                                <option value="High School Medical">High School Medical</option>
+                                <option value="Work Medical">Work Medical</option>
+                                <option value="Result">Result Only</option>
+                                <option value="Insurance Only">Insurance Only</option>
+                                <option value="No Charge">No Charge</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Symptoms</label><textarea id="edit-symptoms" rows="2"></textarea></div>
+                        <div class="form-group"><label>Diagnosis</label><textarea id="edit-diagnosis" rows="2"></textarea></div>
+                        <div class="form-group"><label>Procedure Cost ($)</label><input type="number" id="edit-proc-cost"></div>
+                        <div class="action-buttons-row">
+                            <button type="submit" class="btn-success">Update Record</button>
+                            <button type="button" id="cancel-edit" class="btn-danger">Cancel</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section id="history-view" class="view">
+                    <div class="section-header">
+                        <h2>History</h2>
+                        <button id="toggle-advanced" class="btn-outline">Filters</button>
+                    </div>
+                    <div id="advanced-search-panel" class="advanced-panel hidden">
+                        <div class="filter-grid">
+                            <input type="date" id="search-date-start">
+                            <input type="date" id="search-date-end">
+                            <input type="text" id="search-keywords" placeholder="Diagnosis/Keyword...">
+                        </div>
+                        <button id="apply-filters" class="btn-primary" style="margin-top:10px">Apply</button>
+                    </div>
+                    <div class="table-container">
+                        <table>
+                            <thead><tr><th>Date</th><th>Patient</th><th>Type</th><th>Actions</th></tr></thead>
+                            <tbody id="table-body"></tbody>
+                        </table>
+                    </div>
+                </section>
+
+                <section id="financial-view" class="view">
+                    <h2>Finance Dashboard</h2>
+                    <div class="chart-container" style="height: 250px; margin-bottom: 20px;">
+                        <canvas id="revenueChart"></canvas>
+                    </div>
+                    <div class="card-form">
+                        <h3>Base Pricing</h3>
+                        <table class="pricing-table">
+                            <thead><tr><th>Service</th><th>Price ($)</th></tr></thead>
+                            <tbody id="pricing-body"></tbody>
+                        </table>
+                        <div class="price-options">
+                            <label><input type="radio" name="price-apply" value="forward" checked> New records only</label>
+                            <label><input type="radio" name="price-apply" value="backward"> All existing records</label>
+                        </div>
+                        <button id="save-pricing" class="btn-primary" style="margin-top:10px">Save Changes</button>
+                    </div>
+                </section>
+
+                <section id="reports-view" class="view">
+                    <h2>Export</h2>
+                    <button id="export-excel" class="btn-success" style="width:100%"><i class="fa-solid fa-file-excel"></i> Export Excel</button>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
